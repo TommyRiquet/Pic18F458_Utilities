@@ -15,12 +15,10 @@ void main()
    setup_spi(FALSE);
    setup_wdt(WDT_OFF);
    setup_timer_0(RTCC_INTERNAL);
-   setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);
+   setup_timer_1(T1_DISABLED);
    setup_timer_2(T2_DISABLED,0,1);
    setup_comparator(NC_NC_NC_NC);
    setup_vref(FALSE);
-   enable_interrupts(INT_RDA);
-   enable_interrupts(GLOBAL);
    setup_oscillator(False);
     
    set_timer1(0);
