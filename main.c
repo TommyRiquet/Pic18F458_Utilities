@@ -46,9 +46,11 @@ void main()
   if(distance < limit_distance){ 
      output_high(PIN_E0);
      output_low(PIN_E1);
+     printf('Good')
   }else{
      output_toggle(PIN_E1);
      output_low(PIN_E0);
+     printf('Alerte')
   }
   
   //Gestion des afficheurs
