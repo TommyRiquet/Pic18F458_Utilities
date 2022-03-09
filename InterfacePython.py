@@ -1,23 +1,41 @@
 import serial
 from tkinter import *
+import time
 
 Port = 'COM2'
 Rate = 9600
 
+good = 'Good'
+alerte = 'Alerte'
+
+portSerie = serial.Serial(Port, Rate)
+
 
 def getVal():
-    Val = (serial.readline()).decode()
+    Val = (portSerie.readline()).decode()
     print(Val)
+    Val = Val[:-1]
+    if Val == good:
+        ValOut.set("GOOD")
+        labelValIn.config(fg='green')  # Si Alarme
+    elif Val == alerte:
+        ValOut.set('NOT GOOD')
+        labelValIn.config(fg='red')  # Si pas d'alarme
+    else:
+        print("Distance actuelle :" + Val + 'cm')  # Si rien
+        ValOut.set(Val + ' cm')
+    portSerie.flush()
 
 
 def sendVal():
     try:
         int(inputVal.get())  # Test si valeur correcte
         labelErrIn.config(fg='black')
-        ErrIn.set('')
+        ErrIn.set(inputVal.get())
+
+        # portSerie.write(bytes(':'+'1036' % int(inputVal.get()), 'utf-8'))
 
         print('Valeur envoyé :', inputVal.get())
-        ValOut.set(inputVal.get())  # A MODIF pour écrire sur le port !!!!!!
     except ValueError:
         ErrIn.set('Erreur')
         labelErrIn.config(fg='red')
@@ -55,6 +73,4 @@ window.mainloop()
 Liaison avec le PIC
 """
 
-serial = serial.Serial(Port, Rate)
-
-serial.close()
+portSerie.close()
