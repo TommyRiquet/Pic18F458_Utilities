@@ -1,0 +1,47 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F458
+CCSVerions=5.108dP-0427
+Compiler=PCH
+CCSVersion=5.108Pd
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\tommy\Documents\Electronique\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=04-05-2022
+D1_L=8
+D1_L1=[76098]Project Opened.
+D1_L2=[76119]Started Editing.
+D1_L3=[77516]Stopped Editing.
+D1_L4=[77576]Started Editing.
+D1_L5=[77913]Stopped Editing.
+TotalEdit=24
+TotalDebug=0
+D1_E=24
+D1_D=0
+D1_L6=[77913]Project Closed.
+D1_L7=[77913]Project Opened.
+D1_L8=[77934]Started Editing.
+
+[Opened Files]
+1=main.c
+t1=41
+Count=1
+[main.c]
+Type=4
+[Units]
+Count=1
+1=main (main)
+
+[defines]
+buildcount=1

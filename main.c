@@ -50,24 +50,24 @@ void main()
         if(distance < limit_distance){    //LED Verte 
            output_high(PIN_E0);
            output_low(PIN_E1);
-           printf("Good");
+           //printf("Good");
         }else{                            //LED Rouge
            output_toggle(PIN_E1);
            output_low(PIN_E0);
-           printf("Alerte");
+           //printf("Alerte");
         }
         
         
         //////////////////////////////
         //      AFFICHEURS 7Seg     //
         //////////////////////////////
-        if(distance < 100){               //Distance en centimÃ¨tre
+        if(distance < 100){               //Distance en centimètre
            output_low(PIN_E2);
            
            dizaine = distance /10;
            unite = distance - (dizaine*10);
            output_b((dizaine<<4)+unite);
-        }else{                            //Distance en mÃ¨tre
+        }else{                            //Distance en mètre
             output_high(PIN_E2);
             
             dizaine = distance / 100;
@@ -89,3 +89,5 @@ void main()
 //    PIN B0-7    ||    8 Pins des afficheurs   //
 //                ||                            //
 //////////////////////////////////////////////////
+
+
