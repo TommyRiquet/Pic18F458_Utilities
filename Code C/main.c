@@ -61,13 +61,13 @@ void main()
         //////////////////////////////
         //      AFFICHEURS 7Seg     //
         //////////////////////////////
-        if(distance < 100){               //Distance en centimètre
+        if(distance < 100){               //Distance en centimÃ¨tre
            output_low(PIN_E2);
            
            dizaine = distance /10;
            unite = distance - (dizaine*10);
            output_b((dizaine<<4)+unite);
-        }else{                            //Distance en mètre
+        }else{                            //Distance en mÃ¨tre
             output_high(PIN_E2);
             
             dizaine = distance / 100;
