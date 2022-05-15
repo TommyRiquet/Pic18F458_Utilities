@@ -1,8 +1,7 @@
 import serial
 from tkinter import *
-import time
 
-Port = 'COM3'
+Port = 'COM3' //A modifier en fonction du port USB
 Rate = 9600
 
 portSerie = serial.Serial(Port, Rate)
