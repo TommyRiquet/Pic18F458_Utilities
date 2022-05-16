@@ -8,7 +8,7 @@ CCSVersion=5.108Pd
 FileList=main.c
 [Directories]
 Include=
-[C:\Users\tommy\Documents\Electronique\main]
+[C:\Users\darkv\Documents\projet elec 2\main]
 Type=4
 [mru-list]
 1=main.c
@@ -17,31 +17,48 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=1
+Days=3
 D1=04-05-2022
-D1_L=8
-D1_L1=[76098]Project Opened.
-D1_L2=[76119]Started Editing.
-D1_L3=[77516]Stopped Editing.
-D1_L4=[77576]Started Editing.
-D1_L5=[77913]Stopped Editing.
-TotalEdit=24
+D1_L=2
+D1_L1=[64640]Project Opened.
+D1_L2=[64646]Started Editing.
+D2=11-05-2022
+D2_L=16
+D2_L1=[54573]Project Opened.
+D2_L2=[54584]Started Editing.
+D2_L3=[55590]Stopped Editing.
+TotalEdit=39
 TotalDebug=0
-D1_E=24
-D1_D=0
-D1_L6=[77913]Project Closed.
-D1_L7=[77913]Project Opened.
-D1_L8=[77934]Started Editing.
+D2_E=39
+D2_D=0
+D2_L4=[55611]Project Closed.
+D2_L5=[56085]Project Opened.
+D2_L6=[56098]Started Editing.
+D2_L7=[56871]Stopped Editing.
+D2_L8=[57060]Started Editing.
+D2_L9=[57629]Stopped Editing.
+D2_L10=[58339]Started Editing.
+D2_L11=[58641]Stopped Editing.
+D2_L12=[59530]Started Editing.
+D2_L13=[60572]Stopped Editing.
+D2_L14=[61376]Started Editing.
+D2_L15=[61785]Stopped Editing.
+D2_L16=[62266]Project Closed.
+D3=16-05-2022
+D3_L=1
+D3_L1=[30834]Project Opened.
 
 [Opened Files]
 1=main.c
-t1=41
-Count=1
+t1=39
+Count=2
+2=main.h
+t2=1
 [main.c]
 Type=4
+
+[defines]
+buildcount=19
 [Units]
 Count=1
 1=main (main)
-
-[defines]
-buildcount=1
